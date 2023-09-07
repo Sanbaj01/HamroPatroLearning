@@ -85,22 +85,57 @@
 
 # my_function()
 
-class MyClass:
-    def __init__(self, value):
-        self._value = value
+# class MyClass:
+#     def __init__(self, value):
+#         self._value = value
     
-    def show(self):
-        print(f'Value is {self._value}')
+#     def show(self):
+#         print(f'Value is {self._value}')
 
-    @property
-    def ten_value(self):
-        return 10 * self._value
+#     @property
+#     def ten_value(self):
+#         return 10 * self._value
     
-    @ten_value.setter
-    def ten_value(self, new_value):
-        self._value = new_value/10
+#     @ten_value.setter
+#     def ten_value(self, new_value):
+#         self._value = new_value/10
     
-obj = MyClass(10)
-obj.ten_value = 67
-print(obj.ten_value)
-obj.show()
+# obj = MyClass(10)
+# obj.ten_value = 67
+# print(obj.ten_value)
+# obj.show()
+
+
+# def get_largest_numbers(numbers, n):
+#     numbers.sort()
+
+#     return numbers[-n:]
+
+# nums = [2,3,4,1,34,123,321,1]
+
+# print(nums)
+# largest = get_largest_numbers(nums, 2)
+
+# print(nums)
+
+
+# class Point:
+#     def __init__(self, x, y):
+#         self.x = x
+#         self.y = y
+    
+#     def __add__(self, other):
+#         # Define the behaviour of the + operator for Point Objects
+#         new_x = self.x + other.x
+#         new_y = self.y + other.y
+#         return Point(new_x, new_y)
+    
+#     #Create two Point objects
+# point1 = Point(1, 2)
+# point2 = Point(4, 5)
+
+#     #user the + operator to add two point Objects 
+# result = point1 + point2
+
+# print(result.x, result.y)
+
